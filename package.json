@@ -1,0 +1,13 @@
+{
+  "name": "yardstick",
+  "version": "1.0.0",
+  "description": "A small web app that calculates a student's GPA on the 5.0 scale, built as a SIWESPRO Week 10 mini project. The name plays on the idea of a yardstick, a simple tool for measuring something, here used to measure academic performance.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

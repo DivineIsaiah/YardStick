@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yard Stick | Calculate</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Yard Stick</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="calculator.html" class="active">Calculator</a>
+            <a href="history.html">History</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="calculator-section">
+            <h2>Enter Your Courses</h2>
+            <p class="hint">Grades are scored on the 5.0 scale: A = 5, B = 4, C = 3, D = 2, E = 1, F = 0.</p>
+
+            <form id="gpa-form">
+                <div id="course-rows">
+                    <!-- Course rows are added here dynamically by JavaScript -->
+                    <div class="course-row">
+                        <input type="text" class="course-name" placeholder="Course title" required>
+                        <select class="course-grade" required>
+                            <option value="">Grade</option>
+                            <option value="5">A</option>
+                            <option value="4">B</option>
+                            <option value="3">C</option>
+                            <option value="2">D</option>
+                            <option value="1">E</option>
+                            <option value="0">F</option>
+                        </select>
+                        <input type="number" class="course-units" placeholder="Units" min="1" max="6" required>
+                        <button type="button" class="remove-row-btn">Remove</button>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="add-row-btn" class="btn btn-secondary">+ Add Course</button>
+                    <button type="submit" class="btn">Calculate GPA</button>
+                    <button type="button" id="clear-btn" class="btn btn-secondary">Clear Form</button>
+                </div>
+            </form>
+
+            <div id="result-box" class="result-box hidden">
+                <h3>Result</h3>
+                <p>Total Credit Units: <span id="total-units">0</span></p>
+                <p>Total Grade Points: <span id="total-points">0</span></p>
+                <p class="gpa-value">GPA: <span id="gpa-result">0.00</span></p>
+                <button type="button" id="save-btn" class="btn">Save This Result</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Yard Stick &mdash; SIWESPRO Week 10 Mini Project</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

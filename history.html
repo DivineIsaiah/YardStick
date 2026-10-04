@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yard Stick | History</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Yard Stick</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="history.html" class="active">History</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="history-section">
+            <h2>Saved Calculations</h2>
+            <p class="hint">Results you save on the Calculator page appear here, stored locally in your browser.</p>
+
+            <div id="history-list">
+                <!-- History entries are inserted here dynamically by JavaScript -->
+            </div>
+
+            <p id="empty-message" class="hidden">You haven't saved any calculations yet.</p>
+
+            <button type="button" id="clear-history-btn" class="btn btn-secondary">Clear History</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Yard Stick &mdash; SIWESPRO Week 10 Mini Project</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
